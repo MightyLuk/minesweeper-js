@@ -1,0 +1,70 @@
+.square {
+    width: 10%;
+    height: 10%;
+    background-color: grey;
+    border-style: outset;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: clamp(10px, 6vw, 40px);
+}
+.square-clicked {
+    background-color: darkgrey;
+    border-style: inset;
+}
+.flag:after {
+    content: "\01F6A9";
+}
+.bomb:after {
+    content: "\01F4A3";
+}
+.danger-1 {
+    color: blue;
+}
+.danger-2 {
+    color: green;
+}
+.danger-3 {
+    color: orangered;
+}
+.danger-4 {
+    color: red;
+}
+.danger-5 {
+    color: black;
+}
+.danger-6 {
+    color: yellow;
+}
+.danger-7 {
+    color: darkmagenta;
+}
+.danger-8 {
+    color: darkred;
+}
+.game-won{
+    background-color: green;
+}
+.explode{
+    background-color: darkgrey;
+    animation-name: explosion;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+}
+@keyframes explosion {
+    0% {
+      background-color: darkgrey;
+    }
+    25% {
+        background-color: orange;
+    }
+    50% {
+      background-color: red;
+    }
+    75% {
+        background-color: orangered;
+    }
+    100% {
+      background-color: darkgrey;
+    }
+  }

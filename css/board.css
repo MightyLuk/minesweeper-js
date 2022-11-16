@@ -1,0 +1,8 @@
+#board {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: clamp(300px, 90vw, 600px);
+    aspect-ratio: 1;
+    
+    background-color: gray;
+}
